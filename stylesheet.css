@@ -1,0 +1,287 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+#navbarNav{
+  font-size: 20px;
+}
+.navbar-dark{
+  background-color: rgb(41, 37, 37);
+}
+@media only screen and (max-width: 600px) {
+    .col-md-3{
+        margin: 0;
+        align-content: center;
+    }
+
+  .flip-card-back li{
+    font-size: 10px;
+  }
+    .about .col-md-6 p{
+      font-size: 12px;
+    }
+    .heading{
+        margin-top: 1%;
+    }
+    .col-md-6{
+        font-size: 10px;
+        align-content: center;
+    }
+    .geeks{
+        display: none;
+    }
+    .services-img{
+        display: none;
+    }.row{
+        width: 100%;
+        max-width: 100%;
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+    }
+    .sample{
+        margin-left: 3.5%
+    }
+    .hire{
+        margin-top: 10%;
+    }
+    .logo{
+      font-size: 10px;
+    }
+    .hire h3{
+      margin-top: 20%;
+    }
+    form input{
+      margin-top: 15%;
+      justify-content: center;
+    }
+    .button{
+      display: none;
+    }
+    .flip-card {
+      background-color: transparent;
+      width: 100%;
+      height: 100px;
+      border: 1px solid #f1f1f1;
+      perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    }
+      
+  }
+
+.heading h1{
+  font-size: 50px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+.heading h1:hover{
+  font-size: 50px;
+  cursor: pointer;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: rgb(175, 13, 40);
+  transform: scale(0.9);
+}
+.col-md-6 p{
+  margin-top: 5%;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.geeks {
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-left: 20%;
+  margin-top: 7%;
+}
+.geeks img {
+  width: 50%;
+  transition: 0.5s all ease-in-out;
+}
+
+.geeks:hover img {
+  transform: scale(1.4);
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgb(40, 131, 40);
+  color: white;
+  transform: rotateY(180deg);
+  }
+  .flip-card-back li{
+    font-size: 20px;
+  }
+  
+.services{
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  align-content: center;
+  margin-top: 5%;
+ 
+}
+
+  .demo{
+    background-color: rgb(250, 250, 250);
+    border-radius: 10%;
+    text-align: center;
+    margin-top: 5%;
+    cursor: pointer;
+    border: 1px solid black;
+  }
+  .demo h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .demo p{
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .services-img{
+        margin-top: 3%;
+        margin-left: 20%;
+  }
+  .hire{
+    color: white;
+    height: 350px;
+  }
+  .gmail{
+    width: 100px;
+    height: 35px;
+    border-radius: 10%;
+    font-size: 20px;
+    margin-top: 2%;
+    border: none;
+
+  }
+  .gmail:hover{
+    background-color: rgb(251, 255, 0);
+    color: white;
+  }
+  .gmail a{
+    text-decoration: none;
+    color: black;
+  }
+  .contact{
+    background-color: #dad4d4;
+    overflow: hidden;
+    height: 1000px;
+  }
+  .contact .heading h1{
+    margin-top: 10%;
+  }
+  hr{
+    border: 2px solid black;
+  }
+  form{
+    margin-top: 5%;
+    margin-left: 25%;
+  }
+  form label{
+    margin-top: 3%;
+    font-weight: bold;
+  }
+  form input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: #dad4d4;
+  }
+  form textarea{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 2%;
+    width: 50%;
+    background-color: #dad4d4;
+  }
+  form .email{
+    margin-top: 5%;
+  }
+  form .message{
+    margin-top: 5%;
+  }
+  #button{
+    margin-top: 5%;
+    width: 50%;
+  }
+  .information{
+    margin-top: 20%;
+  }
+  .information h6{
+    font-size: 20px;
+  }
+  .icon{
+    margin-top: 5%;
+  }
+  .social-media{
+    margin-top: 10%;
+  }
+  .button{
+    border: none;
+    background-color: rgb(175, 13, 40);
+    height: 50px;
+    font-family: cursive;
+    font-weight: bold;
+    color: white;
+  }
+  .button:hover{
+    transform: scale(1.1);
+  } 
+
+  #preloader{
+    background-color: white;
+    background-image: url(images/loading.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 50%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+
+  
+  
+  
